@@ -1,46 +1,27 @@
-Sure, here's a basic README file you can include with your script:
+# Image Converter
 
-# Image Converter to WebP Format
+Convert your image files to WebP format easily with this simple web application.
 
-This Python script converts images from various formats to WebP format using the Pillow library.
+## Features
 
-## Prerequisites
-
-Before running this script, ensure you have Python installed on your system. You'll also need to install the Pillow library:
-
-```
-pip install Pillow
-```
+- Upload multiple image files at once.
+- Convert uploaded images to WebP format.
+- Download converted images individually or as a zip file.
+- Clean and user-friendly interface.
 
 ## Usage
 
-1. Place the images you want to convert in the `input_images` folder.
-2. Run the script `image_converter.py`.
-3. The converted images will be saved in the `output_images` folder.
+1. Clone or download this repository to your local machine.
+2. Open `index.html` in your web browser.
+3. Click on the "Choose File" button to select one or more image files from your device.
+4. Click on the "Convert to WebP" button to convert the selected images.
+5. Once the conversion is complete, you can download each converted image individually by clicking on its filename, or download all converted images at once by clicking the "Download All" button.
 
-## Folder Structure
+## Dependencies
 
-```
-- image_converter.py
-- input_images/
-  - image1.jpg
-  - image2.png
-  - ...
-- output_images/
-```
-
-## Note
-
-- Ensure that the script `image_converter.py` and the `input_images` folder are in the same directory.
-- The script will create the `output_images` folder if it does not already exist.
-
-## Contributing
-
-Contributions are welcome! Feel free to submit issues or pull requests.
+- [JSZip](https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js) - Used for creating zip files.
+- [FileSaver.js](https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js) - Used for saving files on the client-side.
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-```
-
-Feel free to customize it according to your preferences and provide more detailed instructions if needed!
