@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Converter</title>
     <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 <body>
     <h1>Image Converter</h1>
@@ -12,8 +19,52 @@
     <button onclick="convertToWebP()">Convert to WebP</button>
     <br>
     <div id="convertedFiles"></div>
+    
     <br>
     <button id="downloadAllBtn" onclick="downloadAll()" style="display:none;">Download All</button>
+    <footer class="footer">
+        <div class="footer-content text-center">
+          <h4>
+            Copyright © 2024 All rights reserved | This portfolio website
+            is created by Tejas Hande.
+          </h4>
+          <div class="social-links">
+            <div class="footer-menu">
+              <ul class="footer-menu-list">
+                <li class="footer-list-items">
+                  <a class="footer-links" href="https://github.com/tejhande" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <li class="footer-list-items">
+                    <a class="footer-links" href="https://www.linkedin.com/in/tejas-hande-900552244/" target="_blank">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </li>
+                  <li class="footer-list-items">
+                    <a class="footer-links" href="https://console.zerodha.com/verified/b04192e6" target="_blank">
+                      <img src="kite-logo.webp" class="kite" alt="kite">
+                    </a>
+                  </li>
+                <li class="footer-list-items">
+                  <a class="footer-links" href="https://www.facebook.com/tejas.hande.568/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="footer-list-items">
+                  <a class="footer-links" href="https://twitter.com/tejashande25" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="footer-list-items">
+                  <a class="footer-links" href="https://www.instagram.com/tejas25___/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="script.js"></script>
