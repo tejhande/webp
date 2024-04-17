@@ -113,7 +113,7 @@ button:hover {
     bottom: 0;
     background-color: #000;
     color: #fff;
-    width: 100%;
+    width: 100vw;
     padding: 2rem;
   }
   
@@ -162,3 +162,11 @@ button:hover {
     margin: 0px;
   }
 
+  @media screen and (min-width: 280px) and (max-width: 576px) {
+  .footer-menu {
+    padding: 0 2rem;
+  }
+
+  .footer-list-items {
+    margin: 0;
+  }}
