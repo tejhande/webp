@@ -53,7 +53,7 @@ h1 {
     cursor: pointer;
     transition: border-color 0.3s ease;
     height: 100px;
-    width: 600px;
+    width: 40vw;
 }
 
 #fileInput:hover {
