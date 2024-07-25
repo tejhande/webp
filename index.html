@@ -4,69 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Converter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="fevicon.jpeg" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 </head>
-<body>
-  <div class="center">
-    <h1>Image Converter</h1>
-    <input type="file" id="fileInput" multiple>
-    <button onclick="convertToWebP()">Convert to WebP</button>
-    <br>
-    <div id="convertedFiles"></div>
-    
-    <br>
-    <button id="downloadAllBtn" onclick="downloadAll()" style="display:none;">Download All</button></div>
-    <footer class="footer">
-        <div class="footer-content text-center">
-          <h4>
-            Copyright © 2024 All rights reserved | This portfolio website
-            is created by Tejas Hande.
-          </h4>
-          <div class="social-links">
-            <div class="footer-menu">
-              <ul class="footer-menu-list">
-                <li class="footer-list-items">
-                  <a class="footer-links" href="https://github.com/tejhande" target="_blank">
-                    <i class="fab fa-github"></i>
-                  </a>
-                  <li class="footer-list-items">
-                    <a class="footer-links" href="https://www.linkedin.com/in/tejas-hande-900552244/" target="_blank">
-                      <i class="fab fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li class="footer-list-items">
-                    <a class="footer-links" href="https://console.zerodha.com/verified/b04192e6" target="_blank">
-                      <img src="kite-logo.webp" class="kite" alt="kite">
-                    </a>
-                  </li>
-                <li class="footer-list-items">
-                  <a class="footer-links" href="https://www.facebook.com/tejas.hande.568/" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
-                  </a>
-                </li>
-                <li class="footer-list-items">
-                  <a class="footer-links" href="https://twitter.com/tejashande25" target="_blank">
-                    <i class="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="footer-list-items">
-                  <a class="footer-links" href="https://www.instagram.com/tejas25___/" target="_blank">
-                    <i class="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
+<body class="d-flex flex-column min-vh-100">
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow">
+                    <div class="card-body text-center">
+                        <h1 class="card-title mb-4">Image Converter</h1>
+                        <div class="mb-3">
+                            <input type="file" id="fileInput" class="form-control" multiple>
+                        </div>
+                        <button onclick="convertToWebP()" class="btn btn-primary mb-3">Convert to WebP</button>
+                        <div id="convertedFiles" class="mb-3"></div>
+                        <button id="downloadAllBtn" onclick="downloadAll()" class="btn btn-success" style="display:none;">Download All</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </footer>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <h6 class="text-muted">Copyright © 2024 All rights reserved | This portfolio website is created by Tejas Hande.</h6>
+            <div class="social-links mt-3">
+                <a href="https://github.com/tejhande" target="_blank" class="btn btn-outline-dark me-2"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/tejas-hande-900552244/" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://console.zerodha.com/verified/b04192e6" target="_blank" class="btn btn-outline-info me-2"><img src="kite-logo.png" alt="kite" height="20"></a>
+                <a href="https://www.facebook.com/tejas.hande.568/" target="_blank" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/tejashande25" target="_blank" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/tejas25___/" target="_blank" class="btn btn-outline-danger"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
     <script src="script.js"></script>
