@@ -1,186 +1,236 @@
-/* Reset CSS */
+/* Reset some default browser styles */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Body styles */
+/* General Body Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
-    background-image: url(images.jpeg);
-    background-size: cover; /* Ensures the background image covers the entire container (the body in this case) without repeating. */
-    background-repeat: no-repeat; /* Prevents the background image from repeating. */
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: top;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 20px;
 }
 
-.center {
-  text-align: center;
-}
-
-/* Container styles */
+/* Container for card content */
 .container {
-    max-width: 90%; /* Adjust to your preference */
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
 }
 
-/* Heading styles */
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #008CBA;
+/* Card and Form Styles */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
 }
 
-/* File input styles */
-#fileInput {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    color: #333;
-    font-size: 16px;
-    cursor: pointer;
-    transition: border-color 0.3s ease;
-    height: 100px;
-    width: 40vw;
+.card-body {
+  padding: 40px;
 }
 
-#fileInput:hover {
-    border-color: #008CBA;
+.card-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
 }
 
-
-.custom-file-upload {
-    display: inline-block;
-    background-color: #008CBA;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Input and Button Styles */
+input[type="file"] {
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
 }
 
-.custom-file-upload:hover {
-    background-color: #005f6b;
-}
-
-/* Button container styles */
-.button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-/* Button styles */
 button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: background-color 0.3s ease;
+  font-size: 1rem;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #45a049;
+  opacity: 0.8;
 }
 
-#downloadAllBtn {
-    background-color: #008CBA;
+button:focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px rgba(0, 123, 255, 0.5);
 }
 
-#downloadAllBtn:hover {
-    background-color: #005f6b;
+/* Styling for the Convert and Download Buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
 }
 
-/* Converted files container styles */
-#convertedFiles {
-    margin-top: 20px;
+.btn-primary:hover {
+  background-color: #0056b3;
 }
 
-/* Individual converted file styles */
-.converted-file {
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.btn-success {
+  background-color: #28a745;
+  color: white;
 }
 
-/* Footer Styles */
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Footer Styling */
 .footer {
-    position: fixed;
-    bottom: 0;
-    background-color: #000;
-    color: #fff;
-    width: 100vw;
-    padding: 2rem;
-  }
-  
-  .footer-list-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    margin: 1rem 1rem 0 1rem;
-    border-radius: 50%;
-    background-color: #0722ef;
-  }
-  
-  .footer-list-items:hover {
-    transform: scale(1.1);
-  }
-  
-  .footer-links {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .social-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .footer-menu {
-    padding: 0 5rem;
-  }
-  
-  .footer-menu .footer-menu-list {
-    display: flex;
-    list-style: none;
-  }
-  
-.kite {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    width: 35px;
-    margin: 0px;
+  background-color: #343a40;
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h6 {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+.footer .social-links a {
+  font-size: 1.2rem;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-body {
+      padding: 25px;
   }
 
-  @media screen and (min-width: 280px) and (max-width: 576px) {
-  .footer-menu {
-    padding: 0 2rem;
+  .card-title {
+      font-size: 1.5rem;
   }
 
-  .footer-list-items {
-    margin: 0;
-  }}
+  button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .social-links a {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+      padding: 20px 0;
+  }
+
+  .card-body {
+      padding: 20px;
+  }
+
+  .card-title {
+      font-size: 1.25rem;
+  }
+
+  .btn-primary, .btn-success {
+      width: 100%;
+  }
+}
+
+/* Accessibility Enhancements */
+:focus {
+  outline: 3px solid #007bff;
+}
+
+a:focus {
+  outline: 3px solid #ffdd57;
+}
+
+/* Color Scheme */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.card {
+  background-color: #ffffff;
+}
+/* Footer Styling */
+.footer {
+  background-color: #343a40; /* Dark background */
+  color: white;
+  padding: 30px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer h6 {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 15px;
+}
+
+/* Social icons styling */
+.footer .social-links a {
+  font-size: 1.5rem; /* Increase size of icons */
+  margin: 0 10px;
+  color: #fff; /* Default icon color */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Change icon color on hover */
+.footer .social-links a:hover {
+  transform: scale(1.1);
+  color: #ffdd57; /* Change to a bright color when hovered */
+}
+
+/* Focus state for accessibility */
+.footer .social-links a:focus {
+  outline: 3px solid #ffdd57; /* Focus outline for accessibility */
+}
+
+/* Specific icon color for different social media platforms (optional) */
+.footer .social-links a.btn-outline-dark {
+  color: #333;
+}
+
+.footer .social-links a.btn-outline-dark:hover {
+  color: #ffdd57;
+}
+
+.footer .social-links a.btn-outline-primary {
+  color: #007bff;
+}
+
+.footer .social-links a.btn-outline-primary:hover {
+  color: #ffdd57;
+}
+
+.footer .social-links a.btn-outline-info {
+  color: #17a2b8;
+}
+
+.footer .social-links a.btn-outline-info:hover {
+  color: #ffdd57;
+}
+
+.footer .social-links a.btn-outline-danger {
+  color: #dc3545;
+}
+
+.footer .social-links a.btn-outline-danger:hover {
+  color: #ffdd57;
+}
+
